@@ -67,8 +67,8 @@ const data = [
     { date: "2023-02", type: "16-24岁人口", value: 18.1 },
     { date: "2023-03", type: "16-24岁人口", value: 19.6 },
     { date: "2023-04", type: "16-24岁人口", value: 20.4 },
-    // { date: '2023-05', type: '16-24岁人口', value: 4.9 },
-    // { date: '2023-06', type: '16-24岁人口', value: 4.9 },
+    { date: '2023-05', type: '16-24岁人口', value: 20.8 },
+    { date: '2023-06', type: '16-24岁人口', value: 21.3 },
     // { date: '2023-07', type: '16-24岁人口', value: 4.9 },
   
     { date: "2018-01", type: "25-59岁人口", value: 4.4 },
@@ -136,8 +136,8 @@ const data = [
     { date: "2023-02", type: "25-59岁人口", value: 4.8 },
     { date: "2023-03", type: "25-59岁人口", value: 4.3 },
     { date: "2023-04", type: "25-59岁人口", value: 4.2 },
-    // { date: '2023-05', type: '25-59岁人口', value: 4.9 },
-    // { date: '2023-06', type: '25-59岁人口', value: 4.9 },
+    { date: '2023-05', type: '25-59岁人口', value: 4.1 },
+    { date: '2023-06', type: '25-59岁人口', value: 4.1 },
     // { date: '2023-07', type: '25-59岁人口', value: 4.9 },
     { date: "2018-01", type: "all", value: 5 },
     { date: "2018-02", type: "all", value: 5 },
@@ -212,6 +212,8 @@ const data = [
     { date: "2023-02", type: "all", value: 5.6 },
     { date: "2023-03", type: "all", value: 5.3 },
     { date: "2023-04", type: "all", value: 5.2 },
+    { date: "2023-05", type: "all", value: 5.2 },
+    { date: "2023-06", type: "all", value: 5.2 },
   ];
   
   const young = data.filter((x) => x.type == "16-24岁人口");
@@ -222,78 +224,6 @@ const data = [
     };
   });
   export const spec = 
-//    {
-//     type: "line",
-//     dataZoom: [{ orient: "bottom" }],
-//     data: { values: data },
-//     xField: "date",
-//     yField: "value",
-//     seriesField: "type",
-    // point: {
-    //   visible: false,
-    // },
-//     line: {
-//       style: {
-//         lineWidth: 2,
-//       },
-//     },
-//     legends: { visible: true, orient: "top" },
-    // markLine: [
-    //   {
-    //     y: "average",
-    //     coordinates: young,
-    //     process: {
-    //       y: "regression",
-    //     },
-    //     label: {
-    //       visible: true,
-    //       position: "insideEndTop",
-    //       text: "Average",
-    //       style: {
-    //         fill: "#000",
-    //       },
-    //       labelBackground: {
-    //         visible: false,
-    //       },
-    //     },
-    //   },
-    // ],
-    // markPoint: [
-    //   {
-    //     coordinate: {
-    //       date: "2023-04",
-    //       value: 20.4,
-    //     },
-    //     itemContent: {
-    //       position: "insideTop",
-    //       type: "text", //
-    //       text: {
-    //         text: "max 20.4%",
-    //       },
-    //     },
-    //     itemLine: {
-    //       type: "type-do",
-    //     },
-    //   },
-    //   {
-    //     coordinate: {
-    //       date: "2018-05",
-    //       value: 9.6,
-    //     },
-    //     itemContent: {
-    //       position: "insideTop",
-    //       type: "text", //
-    //       text: {
-    //         text: "min 9.6%",
-    //       },
-    //     },
-    //     itemLine: {
-    //       type: "type-do",
-    //     },
-    //   },
-    // ],
-//   }
-  
 {
     type: "line",
     dataZoom: [{ orient: "bottom" }],
@@ -302,7 +232,7 @@ const data = [
     },
     title: {
         visible: true,
-        text: "Stacked line chart"
+        text: "全国城镇调查失业率 2018-2023"
     },
     xField: "date",
     yField: "value",
@@ -364,5 +294,4 @@ const data = [
     //   ],
 } as VChartProps["spec"];
   export default {};
-  // export default { data, young, m, spec };
   
