@@ -293,5 +293,3 @@ const data = [
     //     },
     //   ],
 } as VChartProps["spec"];
-  export default {};
-  

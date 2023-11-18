@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@visactor/react-vchart": "^1.5.1",
+    "echarts-for-react": "^3.0.2",
+    "echarts-gl": "^2.0.9",
     "next": "13.5.6",
     "react": "^18",
     "react-dom": "^18"
