@@ -1,7 +1,6 @@
+'use client'
 import {
     Card,
-    Input,
-    Button,
     Typography,
     List,
     ListItem,

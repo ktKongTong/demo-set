@@ -1,14 +1,11 @@
 'use client'
 
 import CenterLayout from "@/layouts/CenterLayout";
-import LRLayout from "@/layouts/LRLayout";
 import { useState } from "react";
 
 import InputCard from "./InputCard";
 import ResultCard from "./ResultCard";
-
-
-
+import ClientOnly from "@/components/ClientOnly";
 
 const generateRandomNumbers = (size:number,numSize:number) => {
 const randomNumbers = [];
@@ -30,13 +27,14 @@ export default function Home() {
 
     
     return (
+        <ClientOnly>
         <CenterLayout>
             <section className="grid xl:grid-cols-2 gap-4">
                 <InputCard onSubmit={onSubmit}/>
                 <ResultCard res={res}/>
             </section>
-
         </CenterLayout>
+        </ClientOnly>
     )
 }
 
