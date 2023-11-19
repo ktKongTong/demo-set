@@ -12,7 +12,7 @@ export default function Home() {
     },[]);
     return (
         <ClientOnly>
-            {/* <ReactECharts option={data} style={{height : "100vh"}}/> */}
+            <ReactECharts option={data} style={{height : "100vh"}}/>
         </ClientOnly> 
     )
 }
