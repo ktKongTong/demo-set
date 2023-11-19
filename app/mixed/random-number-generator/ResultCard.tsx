@@ -10,10 +10,8 @@ import {
 import CopyIconButton from "@/components/CopyIconButton";
 import { useState } from "react";
 
-
 export default function ResultCard({res}:{res:string[]}) {
     const [showIndex,setShowIndex] = useState<boolean>(false)
-
     return(
         <Card  color="transparent" shadow={false} className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
             <Typography variant="h4" color="blue-gray">

@@ -1,13 +1,13 @@
-
-
 import { ClipboardDocumentCheckIcon,ClipboardDocumentListIcon } from '@heroicons/react/24/solid'
 import { IconButton, Tooltip } from '@material-tailwind/react'
 import { useState } from 'react'
 
+import { useCopyToClipboard } from "@uidotdev/usehooks";
 export default function CopyIconButton({text}:{text:string}) {
     const [copied, setCopied] = useState(false)
+    const [copiedText, copyToClipboard] = useCopyToClipboard();
     const handleCopy = () => {
-        navigator.clipboard.writeText(text)
+        copyToClipboard(text)
         setCopied(true)
     }
     return (
