@@ -27,14 +27,12 @@ export default function Home() {
 
     
     return (
-        <ClientOnly>
         <CenterLayout>
             <section className="grid xl:grid-cols-2 gap-4">
                 <InputCard onSubmit={onSubmit}/>
                 <ResultCard res={res}/>
             </section>
         </CenterLayout>
-        </ClientOnly>
     )
 }
 
